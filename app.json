@@ -1,0 +1,25 @@
+{
+  "expo": {
+    "name": "Kinora",
+    "slug": "kinora",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.kinora.mobile"
+    },
+    "android": {
+      "package": "app.kinora.mobile"
+    },
+    "plugins": [
+      ["expo-notifications", { "color": "#1F3D2B" }],
+      ["expo-image-picker", { "photosPermission": "Kinora needs access to your photos to read prescriptions and medical letters." }],
+      ["expo-av", { "microphonePermission": "Kinora needs microphone access to record doctor visits for AI summaries." }]
+    ],
+    "extra": {
+      "apiUrl": "http://localhost:8000/api"
+    }
+  }
+}
